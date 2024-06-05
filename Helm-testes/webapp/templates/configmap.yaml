@@ -2,8 +2,8 @@ kind: ConfigMap
 apiVersion: v1 
 metadata:
   name: {{ .Values.configmap.name }}
-  namespace: {{ .Values.namespace}}
+  namespace: {{ .Values.namespace }}
 data:
   BG_COLOR: '#12181b'
   FONT_COLOR: '#FFFFFF'
-  CUSTOM_HEADER: {{ .Values.configmap.name.data.CUSTOM_HEADER }}
+  CUSTOM_HEADER: {{ .Values.configmap.data.CUSTOM_HEADER }}
